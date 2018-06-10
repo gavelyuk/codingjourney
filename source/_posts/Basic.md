@@ -32,7 +32,7 @@ A fast, simple & powerful blog, powered by [Node.js](http://nodejs.org).
 1 https://github.com/m4sterbunny/m4sterbunny.github.io.git
 2 https://github.com/m4sterbunny/SkillingUp.git
 ```
- ![fork repository](./ImagesForSiteInstall/fork.png "fork it")
+ ![fork repository](./../../../../images/fork.png "fork it")
  * Start working with it
  * use `run.sh` (in windows just click twice) it will update
  ``` bash
@@ -40,8 +40,8 @@ A fast, simple & powerful blog, powered by [Node.js](http://nodejs.org).
  ```
  * Push as - pull request
  * admin `m4sterbunny` must review push and make merge or refuse or users must have admin rights.
- ![use pull](./ImagesForSiteInstall/merge1.png "Pull to repo")
- ![use pull](./ImagesForSiteInstall/merge2.png "Pull to repo")
+ ![use pull](./../../../../images/merge1.png "Pull to repo")
+ ![use pull](./../../../../images/merge2.png "Pull to repo")
 
 
 ## More Information

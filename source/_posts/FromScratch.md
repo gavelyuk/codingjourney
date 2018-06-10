@@ -62,7 +62,7 @@ INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.
 INFO  See you again
 ```
 Must see this picture...
-![Test ok](./ImagesForSiteInstall/hexo- test site.png "Test ok")
+![Test ok](./../../../../images/hexo- test site.png "Test ok")
 
 You can stop server.
 
@@ -112,11 +112,11 @@ INFO  28 files generated in 828 ms
 ```
 before
 
-![before generate](./ImagesForSiteInstall/before-generate.png "before generate")
+![before generate](./../../../../images/before-generate.png "before generate")
 
 after
 
-![after generate](./ImagesForSiteInstall/after-SkillingUp.png "after generate")
+![after generate](./../../../../images/after-SkillingUp.png "after generate")
 
 
 ## Deploy project
