@@ -222,11 +222,11 @@ about:
   photo_url: ## Your photo e.g. http://obzf7z93c.bkt.clouddn.com/themeauthor.jpg
   items:
   - label: email
-    icon: fa-email
+    icon: fa-envelope-open
     url: ## Your email with mailto: e.g.  mailto:zhenggchaoo@gmail.com
     title: ## Your email e.g.  zhenggchaoo@gmail.com
   - label: github
-    icon: fa-github
+    icon: fa-users
     url: ## Your github'url e.g.  https://github.com/chaooo
     title: ## Your github'name e.g.  chaooo
   - label: weibo

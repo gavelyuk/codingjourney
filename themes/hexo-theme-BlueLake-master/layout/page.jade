@@ -12,12 +12,18 @@ block content
           img(src='#{theme.about.photo_url}')
         .author
           p
-            i.fa.fa-user name：
+            i.fa.fa-users name：
             | #{config.author}
-          each item in theme.about.items
             p
-              i(class="fa fa-" + item.label) #{item.label}：
-              a(href=item.url,target="_blank")= item.title
+            i(class="fas fa-envelope") #{theme.about.items[0].title}：
+            a(href=theme.about.items[0].url,target="_blank")= theme.about.items[0].label
+            p
+            i(class="fab fa-facebook" ) #{theme.about.items[1].title}：
+            a(href=theme.about.items[1].url,target="_blank")= theme.about.items[1].label
+            p
+            i(class="fab fa-twitter") #{theme.about.items[2].title}：
+            a(href=theme.about.items[2].url,target="_blank")= theme.about.items[2].label
+
       != page.content
     if theme.comment && page.comments
       #comments

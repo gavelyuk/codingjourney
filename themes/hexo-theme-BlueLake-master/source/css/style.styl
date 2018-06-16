@@ -17,7 +17,7 @@ input:-webkit-autofill
 div
   box-sizing: border-box
 a, button.submit
-  color: #40759b
+  color: #3f6617
   text-decoration: none
   -webkit-transition: all .1s ease-in
   -moz-transition: all .1s ease-in
@@ -27,7 +27,7 @@ a
   &:focus
     outline: none
   &:hover,&:active
-    color: #40759b
+    color: #5f8637
 .clear
   clear: both
 .hide
@@ -41,78 +41,31 @@ blockquote,.stressed
   padding: 10px
   color: #555
   border: 1px solid #000
-  border-left: 5px solid #40759b
+  border-left: 5px solid #5f8637
 strong, b, em
   font-weight: bold
 .hidden1
   display: none
-
-/* iconfont */
 @font-face
-  font-family: "iconfont"
-  src: url('../iconfont/iconfont.eot?t=1478071541360')
-  src: url('../iconfont/iconfont.eot?t=1478071541360#iefix') format('embedded-opentype'), url('../iconfont/iconfont.woff?t=1478071541360') format('woff'), url('../iconfont/iconfont.ttf?t=1478071541360') format('truetype'), url('../iconfont/iconfont.svg?t=1478071541360#iconfont') format('svg')
+    font-family: "iconfont"
+    src: url('../iconfont/iconfont.eot?t=1478071541360')
+    src: url('../iconfont/iconfont.eot?t=1478071541360#iefix') format('embedded-opentype'), url('../iconfont/iconfont.woff?t=1478071541360') format('woff'), url('../iconfont/iconfont.ttf?t=1478071541360') format('truetype'), url('../iconfont/iconfont.svg?t=1478071541360#iconfont') format('svg')
 .fa
-  font-size: 16px
-  font-style: normal
-  &:before
-    font-family: "iconfont"!important
-    -webkit-font-smoothing: antialiased
-    -moz-osx-font-smoothing: grayscale
-    text-rendering: auto
-.fa-home:before
-  content: "\e001"
-.fa-gui:before
-  content: "\e002"
-.fa-user:before
-  content: "\e003"
-.fa-rss:before
-  content: "\e004"
-.fa-rili:before
-  content: "\e005"
-.fa-commt:before
-  content: "\e006"
-.fa-sou:before
-  content: "\e007"
-.fa-biao:before
-  content: "\e008"
-.fa-fei:before
-  content: "\e009"
-.fa-archive:before
-  content: "\e00a"
-.fa-you:before
-  content: "\e00b"
-.fa-huo:before
-  content: "\e00c"
-.fa-hit:before
-  content: "\e00d"
-.fa-right:before
-  content: "\e00e"
-.fa-left:before
-  content: "\e00f"
-.fa-xie:before
-  content: "\e010"
-.fa-empty:before
-  content: "\e011"
-.fa-weibo:before
-  content: "\e012"
-.fa-weixin:before
-  content: "\e013"
-.fa-github:before
-  content: "\e014"
-.fa-email:before
-  content: "\e015"
+    font-size: 22px
+    color: #3f6617
+    text-shadow: 0px 0px 2px white
+.fab
+    color: #f88
 
 /* layout */
 body
-  font-family: "Source Code Pro", Tahoma, "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Microsoft YaHei Light", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
   font-size: 14px
   color: #333
   width:100%
   height:100%
-  background: #c0b4aa url(../img/bg.jpg) no-repeat top center
+  background: #f4f4f2 url(../img/bg.jpg) no-repeat top center
 .layout-g
   letter-spacing: -.31em
   *letter-spacing normal
@@ -206,10 +159,10 @@ body
     a
       color:#333
       &:hover
-        color: #40759b
+        color: #5f8637
         text-decoration underline
     .widget-title,.comments-title
-      color: #40759b
+      color: #5f8637
       line-height: 2.7
       margin-top: 0
       font-size: 16px
@@ -233,7 +186,7 @@ body
         text-overflow: ellipsis
     .category-list-count
       padding-left: 5px
-      color: #40759b
+      color: #5f8637
       &:before
         content: "("
       &:after
@@ -315,7 +268,7 @@ body
   overflow-y auto
   .tips
     text-align center
-    .fa
+    .fac
       font-size: 60px
       color: #B3D2EF
   .item
@@ -333,7 +286,7 @@ body
       white-space: nowrap
       text-overflow: ellipsis
       font-size: 14px
-      color: #40759b
+      color: #5f8637
       &:hover
         text-decoration underline
     .time
@@ -362,15 +315,15 @@ body
   margin-bottom: 40px
   .post-title
     margin: 0
-    color: #40759b
+    color: #667e4d
     text-align: left
-    border-bottom: 1px solid #D8E2EB
+    border-bottom: 1px solid #667e4d
     padding-bottom: 10px
     font-weight bold
     font-size 22px
     line-height: 1.1
     a
-      color: #40759B
+      color: #5f8637
       &:hover
         text-decoration underline
   .post-meta
@@ -396,10 +349,10 @@ body
         &:after
           content: ' '
     a
-      color: #40759b
+      color: #667e4d
     a:hover
-      color: #40759b
-      border-bottom: 1px solid #40759b
+      color: #5f8637
+      border-bottom: 1px solid #667e4d
     .category
       &:before
         font-family: "iconfont"!important
@@ -427,8 +380,8 @@ body
       content: "\e006"
       padding-right: 0.3em
     &:hover
-      color: #40759b
-      border-bottom: 1px solid #40759b
+      color: #5f8637
+      border-bottom: 1px solid #5f8637
     span:after
         content: ''
         display: none
@@ -461,13 +414,13 @@ body
         background: #eee
         font-size: .95em
       a
-        color: #40759b
+        color: #5f8637
         padding-bottom: 2px
         word-break: break-all
         &:hover
           text-decoration: underline
       .caption
-        color: #40759b
+        color: #5f8637
         display: block
         font-size: 0.9em
         margin-top: 0.1em
@@ -497,7 +450,7 @@ body
         background: #eee
         font-size: .95em
       a
-        color: #40759b
+        color: #5f8637
         padding-bottom: 2px
         word-break: break-all
         &:hover
@@ -647,7 +600,7 @@ body
     text-align: center
     font-size .925em
     a
-      color: #40759b
+      color: #5f8637
       margin 0 6px
     span
       margin 0 6px
@@ -723,7 +676,7 @@ body
 .readmore
   a
     font-size: 14px
-    color: #40759b
+    color: #5f8637
     margin: -20px 0 0
     padding: 5px 10px
     float: right
@@ -763,7 +716,7 @@ body
         content: "\e00f"
         padding-right: 0.3em
     &:hover
-      color: #40759b
+      color: #5f8637
     &.next
       float: right
       text-align right
@@ -786,9 +739,9 @@ body
   height: 54px;
   line-height: 56px;
   overflow: hidden
-  color: #40759b;
+  color: #5f8637;
   text-align center
-  text-shadow: 0px 2px 2px #40759b
+  text-shadow: 0px 2px 2px #5f8637
   opacity: 0
   -webkit-transition: visibility 0.6s cubic-bezier(0.6, 0.04, 0.98, 0.335), opacity 0.6s cubic-bezier(0.6, 0.04, 0.98, 0.335), -webkit-transform 0.6s cubic-bezier(0.6, 0.04, 0.98, 0.335)
   -moz-transition: visibility 0.6s cubic-bezier(0.6, 0.04, 0.98, 0.335), opacity 0.6s cubic-bezier(0.6, 0.04, 0.98, 0.335), -moz-transform 0.6s cubic-bezier(0.6, 0.04, 0.98, 0.335)
@@ -1018,8 +971,8 @@ table
 #ds-reset
   a
     &:hover
-      color: #40759b !important
+      color: #5f8637 !important
   .ds-post-button
-    background: #40759b !important
+    background: #5f8637 !important
     &:hover
       background: #608CB7 !important
