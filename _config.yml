@@ -3,16 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: My Codingjourney Space
-subtitle: Super fast Hexo blog
-description: Web development
-author: m4sterbunny
+title: gavelWeb
+subtitle: Web, SEO, Trends, Development
+description: Web development studio
+author: Igor Gavelyuk
 language: EN
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://mycodingjourney.space/
+url: https://gavelweb.site/
 root: /
 # url: http://localhost/:4000
 # root: /blog/
@@ -80,6 +80,6 @@ theme: hexo-theme-BlueLake-master
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/m4sterbunny/m4sterbunny.github.io-codingjourney.git
+  repo: https://github.com/igavelyuk/igavelyuk.github.io
   branch: master
-  message: update
+  message: update-igavelyuk.github.io

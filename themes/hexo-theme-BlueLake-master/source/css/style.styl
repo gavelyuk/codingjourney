@@ -1,33 +1,55 @@
 /* reset */
-body,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,p,img,blockquote,button,pre,fieldset,form,input,select,option
-  margin: 0
-  padding: 0
-  border: 0
-h1,h2,h3,h4,h5,h6
-  font-weight: bold
-  overflow: hidden
-s,i,u,em
-  font-style: normal
-img,button
-  border: none
-form,input,select,option
-  outline none
-input:-webkit-autofill
-  -webkit-box-shadow: 0 0 0px 1000px white inset
-div
-  box-sizing: border-box
+clearfix()
+  body,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,p,img,blockquote,button,pre,fieldset,form,input,select,option
+    margin: 0
+    padding: 0
+    border: 0
+  h1,h2,h3,h4,h5,h6
+    font-weight: bold
+    overflow: hidden
+  s,i,u,em
+    font-style: normal
+  img,button
+    border: none
+  form,input,select,option
+    outline none
+    input:-webkit-autofill
+    -webkit-box-shadow: 0 0 0px 1000px white inset
+    div
+      box-sizing: border-box
+/* variables */
+body-background = #BCBCA0
+body-color = #000
+
+logo-color = #7d9bf0
+logo-border()
+  text-shadow: 0px 0px 2px #000
+
+header-color = #a4bcff
+header-border()
+  text-shadow: 0px 0px 2px #274495
+
+menu-color-icons = #a4bcff
+menu-color = #a4bcff
+menu-shadow()
+  text-shadow: 0px 0px 2px #2355e1
+a-link-color = #a4bcff
+a-link-color-hover = #363e54
+
+code-color = #000
+post-archive-bg = #363e54
+
 a, button.submit
-  color: #3f6617
+  color: a-link-color
   text-decoration: none
   -webkit-transition: all .1s ease-in
   -moz-transition: all .1s ease-in
   -o-transition: all .1s ease-in
   transition: all .1s ease-in
-a
   &:focus
     outline: none
   &:hover,&:active
-    color: #5f8637
+    color: a-link-color-hover
 .clear
   clear: both
 .hide
@@ -52,20 +74,19 @@ strong, b, em
     src: url('../iconfont/iconfont.eot?t=1478071541360#iefix') format('embedded-opentype'), url('../iconfont/iconfont.woff?t=1478071541360') format('woff'), url('../iconfont/iconfont.ttf?t=1478071541360') format('truetype'), url('../iconfont/iconfont.svg?t=1478071541360#iconfont') format('svg')
 .fa
     font-size: 22px
-    color: #3f6617
-    text-shadow: 0px 0px 2px white
+    color: menu-color-icons
 .fab
-    color: #f88
+    color: menu-color-icons
 
 /* layout */
 body
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
   font-size: 14px
-  color: #333
+  color: body-color
   width:100%
   height:100%
-  background: #f4f4f2 url(../img/bg.jpg) no-repeat top center
+  background: body-background url(../img/bg.jpg) no-repeat top center
 .layout-g
   letter-spacing: -.31em
   *letter-spacing normal
@@ -123,8 +144,8 @@ body
 #logo
   font: bold 42px/1.2 Arial
   white-space nowrap
-  color: #FFF
-  text-shadow: 1px 3px 6px #113f6e
+  color: logo-color
+  logo-border()
 
 #nav-menu
   margin: 20px 0
@@ -139,7 +160,7 @@ body
     color: #FFF
     font-size: 16px
     border: 1px solid transparent
-    text-shadow: 0px 0px 2px black;
+    menu-shadow()
     &:hover,&.current
       border-bottom: 1px solid #fff
 
@@ -309,22 +330,23 @@ body
   padding: 25px
   background: #FFF
   border-radius: 4px
-  -webkit-box-shadow: 1px 2px 3px #ADC2D7
-  box-shadow: 1px 2px 3px #ADC2D7
-  border: 1px solid #ADC2D7
+  -webkit-box-shadow: 1px 2px 3px header-color
+  box-shadow: 1px 2px 3px header-color
+  border: 1px solid header-color
   margin-bottom: 40px
   .post-title
     margin: 0
-    color: #667e4d
+    color: header-color
     text-align: left
-    border-bottom: 1px solid #667e4d
+    border-bottom: 1px solid header-color
     padding-bottom: 10px
     font-weight bold
     font-size 22px
     line-height: 1.1
     a
-      color: #5f8637
+      color: a-link-color
       &:hover
+        color: a-link-color-hover
         text-decoration underline
   .post-meta
     padding: 0
@@ -349,10 +371,9 @@ body
         &:after
           content: ' '
     a
-      color: #667e4d
+      color: a-link-color
     a:hover
-      color: #5f8637
-      border-bottom: 1px solid #667e4d
+      color: a-link-color-hover
     .category
       &:before
         font-family: "iconfont"!important
@@ -410,11 +431,11 @@ body
         margin 0 5px
         padding: 0 5px
         font-family: Source Code Pro,Monaco,Menlo,Consolas,monospace
-        color: #4d4d4c
+        color: code-color
         background: #eee
         font-size: .95em
       a
-        color: #5f8637
+        color: a-link-color
         padding-bottom: 2px
         word-break: break-all
         &:hover
@@ -481,13 +502,13 @@ body
     font-weight bold
     font-size 24px
     letter-spacing: -1px;
-    background: #D8E2EB
+    background: post-archive-bg
     height: 100px;
     width: 100px;
     border-radius: 50%;
     text-align center
     line-height: 100px;
-    color: #5483B1
+    color: menu-color
     &:before
       font-family: "iconfont" !important;
       font-weight normal
@@ -596,11 +617,11 @@ body
   padding: 30px 0
   .footer-info
     line-height: 2
-    color: #333
+    color: a-link-color-hover
     text-align: center
     font-size .925em
     a
-      color: #5f8637
+      color:a-link-color-hover
       margin 0 6px
     span
       margin 0 6px
@@ -609,17 +630,17 @@ body
       margin 0 6px 0 0
       padding 0 2px
       &.fa-github
-        color #000
+        color: a-link-color-hover
         &:hover
-          color:#4078c0
+          color:a-link-color-hover
       &.fa-weibo
-        color: #E6162D
+        color: aa-link-color-hover
         &:hover
-          color #FF9933
+          color a-link-color-hover
       &.fa-email
-        color: #756E78
+        color: a-link-color-hover
         &:hover
-          color #000
+          color: a-link-color-hover
     p
       a
         margin 0
@@ -676,7 +697,7 @@ body
 .readmore
   a
     font-size: 14px
-    color: #5f8637
+    color: a-link-color
     margin: -20px 0 0
     padding: 5px 10px
     float: right
@@ -684,8 +705,7 @@ body
       content: ">>"
       padding-left: 0.15em
     &:hover
-      -webkit-box-shadow: 0 -1px 4px #5483B1 inset
-      box-shadow: 0 -1px 4px #5483B1 inset
+      color: a-link-color
 /* post navigator*/
 .post-nav
   overflow: hidden
